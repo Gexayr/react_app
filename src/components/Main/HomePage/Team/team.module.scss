@@ -1,0 +1,202 @@
+$fr: calc((100% - 330px) / 12);
+
+
+.team {
+  padding: 50px 0px;
+  position: relative;
+
+  @media all and (min-width: 1440px) {
+    padding: 100px 0px;
+  }
+
+  .firstBlock {
+    padding: 0px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    @media all and (min-width: 1440px) {
+      padding: 0px 150px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .title {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 125%;
+      transition: all 0.3s;
+      @media all and (min-width: 1440px) {
+        font-size: 54px;
+        transform: translateY(500%);
+      }
+      &_intersected {
+        @media all and (min-width: 1440px) {
+          transform: translateY(0%);
+        }
+      }
+
+      span:last-child {
+        white-space: pre-wrap;
+        background-color: #f3ec78;
+        background-image: linear-gradient(45deg, #A6C17B 12.01%, #E1A56A 58.98%, #D4517F 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+      }
+
+
+    }
+
+    .text {
+      text-align: center;
+      margin-top: 11px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 180%;
+      text-align: center;
+      color: #D1D3DC;
+      transition: all 0.3s;
+
+      @media all and (min-width: 1440px) {
+        margin-top: 0px;
+        text-align: left;
+        width: calc(5 * #{ $fr } + 4 * 30px);
+        font-size: 16px;
+        transform: translateY(500%);
+      }
+
+      &_intersected {
+        @media all and (min-width: 1440px) {
+          transform: translateY(0%);
+        }
+      }
+
+    }
+  }
+
+  .secondBlock {
+    margin-top: 30px;
+    transition: all 0.3s;
+    @media all and (min-width: 1440px) {
+      margin-top: 75px;
+      //transform: translateY(150%);
+    }
+
+    &_intersected {
+      @media all and (min-width: 1440px) {
+        transform: translateY(0%);
+      }
+    }
+
+    .swiper {
+      padding-left: 16px;
+      @media all and (min-width: 1440px) {
+        padding-left: 150px;
+      }
+
+      .slide {
+        width: 260px;
+        position: relative;
+
+        @media all and (min-width: 1440px) {
+          width: 100%;
+        }
+
+        .image {
+          display: block;
+          width: 260px;
+          height: auto;
+          border-radius: 8px;
+
+          @media all and (min-width: 1440px) {
+            width: 100%;
+          }
+        }
+
+        .name {
+          position: absolute;
+          left: 16px;
+          bottom: 39px;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 180%;
+          text-transform: uppercase;
+
+          @media all and (min-width: 1440px) {
+            left: 30px;
+            bottom: 50px;
+            font-size: 24px;
+          }
+        }
+
+        .position {
+          position: absolute;
+          left: 16px;
+          bottom: 16px;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 180%;
+          color: #D1D3DC;
+
+          @media all and (min-width: 1440px) {
+            left: 30px;
+            bottom: 25px;
+            font-size: 14px;
+          }
+        }
+
+        .socialBlock {
+          display: flex;
+          position: absolute;
+          right: 16px;
+          bottom: 16px;
+
+          @media all and (min-width: 1440px) {
+            right: 24px;
+            bottom: 24px;
+          }
+
+          a {
+            display: block;
+            text-decoration: none;
+            margin-left: 6px;
+            @media all and (min-width: 1440px) {
+              margin-left: 8px;
+            }
+
+            svg {
+              width: 30px;
+              height: 30px;
+              @media all and (min-width: 1440px) {
+                width: 34px;
+                height: 34px;
+              }
+
+            }
+
+
+          }
+
+        }
+
+
+      }
+
+
+    }
+
+
+  }
+
+
+}

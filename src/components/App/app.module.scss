@@ -1,0 +1,31 @@
+.app {
+  position: relative;
+  background: #111523;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+
+  .burger {
+    z-index: 9999;
+    position: absolute;
+    top: 21px;
+    right: 16px;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    display: block;
+    @media all and (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+}

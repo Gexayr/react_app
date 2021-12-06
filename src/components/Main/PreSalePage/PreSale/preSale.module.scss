@@ -1,0 +1,100 @@
+.preSale {
+  margin-top: 30px;
+
+  @media all and (min-width: 1440px) {
+    margin-top: 30px;
+  }
+
+  .title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 125%;
+    text-align: center;
+
+    span:first-child {
+      color: #D9A96D;
+    }
+
+    @media all and (min-width: 1440px) {
+      font-size: 54px;
+    }
+
+  }
+
+  .blocks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    @media all and (min-width: 1440px) {
+      margin-top: 40px;
+      flex-direction: row;
+      display: grid;
+      grid-template-columns: 1fr 1.65fr 1fr;
+      grid-gap: 20px;
+    }
+
+    .block {
+      background: #181D2B;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 16px;
+      padding: 16px;
+
+      &:not(:first-child) {
+        margin-top: 12px;
+        @media all and (min-width: 1440px) {
+          margin-top: 0px;
+        }
+      }
+
+      @media all and (min-width: 1440px) {
+        padding: 24px;
+      }
+
+      p:first-child {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        color: #AFB2BF;
+      }
+
+      p:last-child {
+        white-space: pre-line;
+        word-wrap: break-word;
+        margin-top: 4px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 180%;
+        @media all and (min-width: 1440px) {
+          font-size: 18px;
+        }
+      }
+
+
+    }
+
+  }
+
+  .description {
+    margin-top: 24px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 180%;
+    text-align: center;
+    color: #AFB2BF;
+    @media all and (min-width: 1440px) {
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+  }
+
+}

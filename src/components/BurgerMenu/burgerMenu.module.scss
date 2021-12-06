@@ -1,0 +1,109 @@
+.burgerMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: #111523;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s;
+  transform: translateX(100%);
+  padding: 20px 16px 40px;
+  box-sizing: border-box;
+
+  &_open {
+    transform: translateX(0%);
+  }
+
+  .logo {
+    //position: absolute;
+    //top: 20px;
+    //left: 16px;
+    align-self: normal;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+  }
+
+  .linksWrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    position: relative;
+
+    .links {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      //align-items: center;
+      justify-content: center;
+      position: relative;
+      align-items: stretch;
+
+      .link {
+        z-index: 10;
+        text-decoration: none;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        position: relative;
+
+        &:not(:first-child) {
+          margin-top: 32px;
+          margin-top: 32px;
+        }
+      }
+
+      .radialGradient {
+        z-index: 3;
+        position: absolute;
+        top: -31px;
+        bottom: -31px;
+        left: 0;
+        right: 0;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(17, 21, 35, 0.77) 0%, #111523 100%);
+      }
+
+      .mask {
+        z-index: 2;
+        position: absolute;
+        top: -31px;
+        bottom: -31px;
+        width: auto;
+        left: 50%;
+        height: auto;
+        transform: translateX(-50%);
+      }
+
+    }
+  }
+
+
+  .button {
+    padding: 20px 30px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+
+}

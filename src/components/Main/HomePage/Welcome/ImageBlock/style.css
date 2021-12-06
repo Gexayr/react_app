@@ -1,0 +1,24 @@
+.image-block-animation {
+    animation-duration: 2s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-delay: 900ms;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-11.04deg);
+    }
+    25% {
+        transform: rotate(-11.04deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-11.04deg);
+    }
+    100% {
+        transform: rotate(-11.04deg);
+    }
+}

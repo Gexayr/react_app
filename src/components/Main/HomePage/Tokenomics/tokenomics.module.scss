@@ -1,0 +1,128 @@
+.tokenomics {
+  padding: 50px 16px;
+  overflow: hidden;
+
+  @media all and (min-width: 1440px) {
+    padding: 100px 150px;
+  }
+
+  .mainTitle {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 125%;
+    text-align: center;
+    transition: all 0.3s;
+    @media all and (min-width: 1440px) {
+      font-size: 54px;
+      transform: translateY(700%);
+    }
+    &_intersected {
+      @media all and (min-width: 1440px) {
+        transform: translateY(0%);
+      }
+    }
+
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    transition: all 0.3s;
+    @media all and (min-width: 1440px) {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 'a a b' 'c d e';
+      grid-gap: 22px;
+      transform: translateY(100%);
+    }
+    &_intersected {
+      @media all and (min-width: 1440px) {
+        transform: translateY(0%);
+      }
+    }
+
+    .card {
+      background: radial-gradient(41.26% 117.44% at 74.09% -27.52%, rgba(220, 100, 115, 0.11) 0%, rgba(220, 100, 115, 0) 100%), #181D2B;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+
+      &:not(:first-child) {
+        margin-top: 12px;
+        @media all and (min-width: 1440px) {
+          margin-top: 0px;
+        }
+      }
+
+      @media all and (min-width: 1440px) {
+        padding: 24px;
+      }
+
+      &:nth-child(1) {
+        grid-area: a
+      }
+
+      &:nth-child(2) {
+        grid-area: b
+      }
+
+      &:nth-child(3) {
+        grid-area: c
+      }
+
+      &:nth-child(4) {
+        grid-area: d
+      }
+
+      &:nth-child(5) {
+        grid-area: e
+      }
+
+      .title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        color: #AFB2BF;
+        text-align: left;
+      }
+
+      .subtitle {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 180%;
+        margin-top: 4px;
+        word-wrap: break-word;
+        @media all and (min-width: 1440px) {
+          font-size: 18px;
+        }
+
+        svg {
+          cursor: pointer;
+          width: 16px;
+          height: 16px;
+          @media all and (min-width: 1440px) {
+            width: 16px;
+            height: 16px;
+          }
+        }
+
+      }
+
+    }
+
+
+  }
+
+
+}
